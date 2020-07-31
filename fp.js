@@ -1,3 +1,12 @@
+let btnName = document.querySelector("#btnName");
+let displayPara = document.querySelector("#displayPara");
+//alert("here1");
+btnName.onclick = function(){
+  //alert("here");
+        //document.getElementById("displayPara").style.color = "#ff0000";
+        displayPara.style.color = "red";
+}
+
 let slideIndex = 0;
 showSlides();
 
@@ -16,11 +25,4 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-
-let btnName = document.querySelector("#btnName");
-let displayPara = document.querySelector("#displayPara");
-btnName.onclick =function(){
-        //document.getElementById("displayPara").style.color = "red";
-        displayPara.style.color = "red";
 }
